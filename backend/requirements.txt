@@ -1,0 +1,12 @@
+Django>=5.2,<5.3
+djangorestframework>=3.16,<3.17
+django-unfold>=0.70,<0.71
+django-cors-headers>=4.7,<4.8
+psycopg[binary]>=3.2,<3.3
+djangorestframework-simplejwt>=5.5,<5.6
+drf-spectacular>=0.28,<0.29
+python-dotenv>=1.1,<1.2
+Pillow>=11,<13
+gunicorn>=23.0,<24.0
+whitenoise>=6.8,<7.0
+dj-database-url>=2.3,<3.2

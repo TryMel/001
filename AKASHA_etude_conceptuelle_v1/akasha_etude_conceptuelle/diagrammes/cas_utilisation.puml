@@ -1,0 +1,105 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #F7FAFC
+  BorderColor #315B7D
+  ArrowColor #475569
+}
+
+actor Visiteur as Visitor
+actor "Utilisateur inscrit" as Member
+actor "Professionnel / candidat" as Pro
+actor "Client particulier" as Client
+actor "Membre d'organisation\n(recruteur / RH)" as OrgMember
+actor "Administrateur" as Admin
+actor "Modérateur" as Moderator
+actor "Gestionnaire du\nréférentiel métiers" as TaxAdmin
+actor "Service e-mail / SMS" as Notify
+
+Member <|-- Pro
+Member <|-- Client
+Member <|-- OrgMember
+Admin <|-- Moderator
+Admin <|-- TaxAdmin
+
+rectangle "AKASHA — plateforme" {
+  usecase "Consulter les offres\net profils publics" as UC_Browse
+  usecase "Rechercher et filtrer" as UC_Search
+  usecase "Créer un compte" as UC_Register
+  usecase "Vérifier un contact" as UC_Verify
+  usecase "Se connecter / récupérer\nson accès" as UC_Login
+  usecase "Gérer le profil personnel" as UC_Profile
+  usecase "Gérer le profil\nprofessionnel" as UC_ProProfile
+  usecase "Gérer compétences,\nexpériences et justificatifs" as UC_Skills
+  usecase "Déposer une candidature" as UC_Apply
+  usecase "Suivre / retirer une\ncandidature" as UC_Track
+  usecase "Créer un espace\norganisation" as UC_CreateOrg
+  usecase "Gérer les membres\net leurs permissions" as UC_Members
+  usecase "Publier / modifier /\nclôturer une offre" as UC_Publish
+  usecase "Consulter et traiter\nles candidatures" as UC_ReviewApps
+  usecase "Échanger par messagerie" as UC_Message
+  usecase "Recevoir les notifications" as UC_Notifications
+  usecase "Signaler un compte,\nune offre ou un message" as UC_Report
+  usecase "Gérer les comptes et\nles organisations" as UC_AdminAccounts
+  usecase "Modérer les contenus\net traiter les signalements" as UC_Moderate
+  usecase "Gérer métiers, compétences\net catégories" as UC_Taxonomy
+  usecase "Consulter statistiques et\njournal des actions sensibles" as UC_Audit
+  usecase "Créer une demande\nde prestation" as UC_ServiceRequest
+  usecase "Envoyer une proposition /\nun devis" as UC_Proposal
+  usecase "Valider une collaboration\net laisser un avis" as UC_Review
+}
+
+Visitor --> UC_Browse
+Visitor --> UC_Search
+Visitor --> UC_Register
+
+Member --> UC_Login
+Member --> UC_Profile
+Member --> UC_Message
+Member --> UC_Notifications
+Member --> UC_Report
+
+Pro --> UC_ProProfile
+Pro --> UC_Skills
+Pro --> UC_Apply
+Pro --> UC_Track
+Pro --> UC_ServiceRequest
+Pro --> UC_Proposal
+Pro --> UC_Review
+
+Client --> UC_ServiceRequest
+Client --> UC_Search
+Client --> UC_Proposal
+Client --> UC_Review
+
+OrgMember --> UC_CreateOrg
+OrgMember --> UC_Members
+OrgMember --> UC_Publish
+OrgMember --> UC_ReviewApps
+OrgMember --> UC_Message
+
+Admin --> UC_AdminAccounts
+Admin --> UC_Audit
+Moderator --> UC_Moderate
+TaxAdmin --> UC_Taxonomy
+
+UC_Register .> UC_Verify : <<include>>
+UC_Apply .> UC_Login : <<include>>
+UC_Proposal .> UC_Login : <<include>>
+UC_Publish .> UC_Login : <<include>>
+UC_Notifications --> Notify
+
+note bottom of UC_ServiceRequest
+  Fonctions de mise en relation de prestations : V2
+end note
+note bottom of UC_Review
+  Collaboration vérifiée et avis : V2
+end note
+note bottom of UC_CreateOrg
+  L'accès de chaque membre dépend de son adhésion
+  active et de la permission requise.
+end note
+@enduml

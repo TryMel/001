@@ -1,0 +1,329 @@
+MODÈLE GLOBAL DE LA PLATEFORME PROFESSIONNELLE UNIVERSELLE
+Version : 1.0 — Modèle conceptuel
+Ambition : internationale
+Nature : plateforme numérique multiservice dédiée au monde professionnel
+1. Vision et mission
+1.1. Vision
+Construire une infrastructure numérique mondiale qui permet aux individus et aux organisations de trouver des compétences, des opportunités, des clients, des prestataires et des collaborateurs, quel que soit leur métier, leur niveau d'expérience ou leur pays.
+1.2. Mission
+Permettre à chaque utilisateur de valoriser ses compétences, de trouver des opportunités et de développer son activité professionnelle.
+La plateforme accompagnera les utilisateurs de leurs premières expériences jusqu'à leur évolution professionnelle : stage, emploi, activité indépendante, prestation, création d'entreprise ou collaboration internationale.
+1.3. Principe fondamental
+La plateforme ne doit pas être un simple catalogue d'annonces.
+Elle doit relier quatre éléments :
+• Les personnes : étudiants, travailleurs, indépendants, entrepreneurs et particuliers.
+• Les organisations : entreprises, établissements de formation, associations et institutions.
+• Les opportunités : emplois, stages, missions, projets, prestations et expériences professionnelles.
+• Les collaborations : sélection, engagement, exécution, paiement, évaluation et historique.
+Sa valeur repose sur la capacité à transformer une recherche en résultat concret.
+2. Les utilisateurs du système
+La plateforme distinguera les personnes physiques et les organisations. Un même compte pourra posséder plusieurs rôles.
+2.1. Les particuliers
+Ils pourront rechercher un professionnel pour un besoin personnel : réparation, maintenance, conseil, assistance, service à domicile ou autre prestation.
+Leurs besoins principaux seront de trouver une personne compétente, comparer les propositions, comprendre les tarifs et suivre la réalisation d'une prestation.
+Monétisation envisagée : frais de service, commissions sur les prestations, services premium et options de recherche avancée.
+2.2. Les professionnels
+Cette catégorie comprend notamment les salariés, indépendants, freelances, artisans, techniciens, consultants et entrepreneurs.
+Ils pourront présenter leurs compétences, publier leurs réalisations, recevoir des demandes, répondre à des missions, rechercher des emplois et développer leur clientèle.
+Monétisation envisagée : abonnements professionnels, outils de gestion, services de visibilité et frais liés à certaines transactions.
+2.3. Les étudiants et les jeunes diplômés
+Ils disposeront d'un espace pour construire leur identité professionnelle et accéder à leurs premières expériences.
+Fonctionnalités prévues :
+• Profil étudiant et parcours de formation.
+• Recherche de stages et d'alternances.
+• Recherche de projets pratiques et d'expériences professionnelles.
+• Mise en relation avec des entreprises et des mentors.
+• Portfolio de réalisations.
+• Valorisation des compétences acquises.
+• Historique des expériences et recommandations.
+La plateforme devra permettre à un étudiant de faire évoluer son profil vers celui d'un jeune diplômé, puis d'un professionnel, sans perdre son historique.
+Monétisation envisagée : abonnements étudiants accessibles, accompagnement professionnel, services premium et programmes organisés avec des établissements ou des partenaires.
+2.4. Les entreprises et les recruteurs
+Les organisations pourront rechercher des candidats, recruter des stagiaires, trouver des prestataires, publier des missions et gérer leurs collaborations externes.
+Elles disposeront notamment de profils d'entreprise, d'espaces de recrutement, d'outils de recherche, d'un suivi des candidatures et d'un historique des collaborations.
+Monétisation envisagée : abonnements, annonces payantes, recherche avancée, recrutement assisté et outils de gestion des prestataires.
+2.5. Les établissements et les institutions partenaires
+Les universités, écoles, organismes de formation, associations et institutions pourront utiliser la plateforme pour publier des opportunités et accompagner leurs publics.
+Exemples :
+• Programmes de stages.
+• Projets étudiants proposés par des entreprises.
+• Programmes d'insertion professionnelle.
+• Recherche de talents.
+• Programmes d'accompagnement et de mentorat.
+• Initiatives de développement des compétences.
+Monétisation envisagée : licences institutionnelles, services dédiés, programmes partenaires et contrats de service.
+3. Une identité professionnelle unique
+Chaque personne disposera d'un profil professionnel central, appelé provisoirement « Passeport professionnel ».
+Ce profil ne sera pas limité à un CV.
+Il rassemblera les informations qui permettent de comprendre ce que la personne sait faire, ce qu'elle recherche et ce qu'elle peut apporter.
+3.1. Informations du profil
+CatégorieContenuIdentitéNom, informations de présentation et coordonnées contrôléesSituationÉtudiant, salarié, indépendant, entrepreneur, demandeur d'emploi ou autre situationMétiersProfessions exercées ou recherchéesCompétencesCompétences déclarées, évaluées ou vérifiéesFormationDiplômes, certifications, parcours et formationsExpérienceEmplois, stages, missions, projets et activitésRéalisationsPortfolio, travaux, résultats et projets documentésPréférencesType de travail, disponibilité, rémunération recherchée et mobilitéLanguesLangues parlées et niveaux déclarés ou évaluésRéputationAvis et références associés à des collaborations réellesDocumentsDocuments professionnels dont l'accès est contrôlé 
+Toutes les informations ne seront pas publiques par défaut. L'utilisateur contrôlera les informations partagées selon les fonctionnalités et les règles applicables.
+3.2. Des compétences vérifiables
+La plateforme devra distinguer clairement :
+• Les compétences déclarées par l'utilisateur.
+• Les compétences démontrées à travers des réalisations.
+• Les compétences évaluées par un test.
+• Les qualifications confirmées par un organisme.
+• Les expériences attestées par une organisation.
+• Les compétences observées lors de collaborations.
+Cette distinction évitera de présenter une simple déclaration comme une certification officielle.
+3.3. Un profil évolutif
+Le Passeport professionnel accompagnera l'utilisateur sur la durée.
+Un étudiant pourra ajouter ses projets, obtenir une première expérience, recevoir une recommandation et candidater ensuite à un emploi.
+Un salarié pourra rechercher une nouvelle fonction ou développer une activité indépendante.
+Un prestataire pourra documenter ses réalisations et présenter un historique de collaborations.
+L'objectif est de construire une continuité entre les différentes étapes de la vie professionnelle.
+4. Les espaces fonctionnels de la plateforme
+La plateforme sera organisée autour de plusieurs espaces interconnectés.
+Espace 1 — Découverte
+Il permettra de découvrir les personnes, les compétences, les organisations, les offres d'emploi, les stages, les missions et les prestations.
+Les résultats dépendront des critères de recherche, des compétences, de la localisation, de la disponibilité et des besoins exprimés.
+Espace 2 — Opportunités professionnelles
+Il regroupera différentes formes d'opportunités :
+• Emploi à temps plein ou partiel.
+• Stage et alternance.
+• Mission freelance.
+• Contrat de prestation.
+• Projet à durée déterminée.
+• Projet pratique ou expérience professionnelle.
+• Mission bénévole, lorsque cela est approprié.
+• Mentorat et accompagnement professionnel.
+Chaque opportunité aura ses propres règles de candidature et de sélection.
+Un recrutement salarié ne doit pas être géré exactement comme une prestation ponctuelle.
+Espace 3 — Services professionnels
+Cet espace permettra aux professionnels de proposer des prestations et aux particuliers ou entreprises d'exprimer leurs besoins.
+Le fonctionnement prévu sera le suivant :
+• Le client décrit son besoin.
+• La plateforme recherche des professionnels correspondants.
+• Les professionnels disponibles peuvent répondre ou être sollicités.
+• Le client compare les propositions.
+• Les parties conviennent du périmètre, du prix et des délais.
+• La prestation est exécutée.
+• Le résultat est validé selon l'accord conclu.
+• Le paiement et l'évaluation sont traités selon les modalités applicables.
+• La collaboration est ajoutée à l'historique lorsque les conditions le permettent.
+La plateforme ne devra pas imposer un contrat identique à tous les métiers. Les modalités d'intervention varieront selon la prestation et la législation applicable.
+Espace 4 — Recrutement
+Les entreprises pourront :
+• Publier une offre.
+• Définir les critères recherchés.
+• Recevoir et organiser les candidatures.
+• Rechercher des profils.
+• Comparer les qualifications et les expériences.
+• Planifier des entretiens.
+• Communiquer avec les candidats.
+• Suivre les étapes du recrutement.
+• Conserver un historique conforme aux règles de conservation des données.
+Les étudiants bénéficieront également de mécanismes permettant aux entreprises de publier des stages et aux candidats de présenter leurs projets pratiques.
+Espace 5 — Gestion des collaborations
+Cet espace suivra les travaux réalisés à travers la plateforme.
+Il pourra contenir :
+• Le besoin initial.
+• Les propositions et devis.
+• L'accord entre les parties.
+• Les responsabilités définies.
+• Les délais et les étapes.
+• Les fichiers utiles.
+• Les échanges associés au projet.
+• Les validations du résultat.
+• Les paiements et documents correspondants.
+• L'historique de la collaboration.
+Cette fonction est importante : la plateforme doit faciliter non seulement la découverte d'un professionnel, mais également la bonne réalisation du travail.
+Espace 6 — Communication
+Les utilisateurs disposeront d'une messagerie liée à leurs interactions professionnelles.
+Elle pourra servir aux candidatures, aux demandes de devis, aux négociations, aux collaborations et aux échanges entre partenaires.
+Les règles de sécurité devront limiter les abus, le spam et les tentatives de fraude.
+Espace 7 — Réputation et confiance
+Les évaluations devront être liées à des expériences réelles et respecter des règles de modération.
+La plateforme distinguera par exemple :
+• Les références professionnelles.
+• Les évaluations de prestations.
+• Les évaluations de collaboration.
+• Les qualifications vérifiées.
+• Les éventuels signalements ou litiges.
+Il ne faudra pas réduire toute la valeur d'une personne à une note unique. Un développeur, un comptable et un technicien ne se jugent pas nécessairement sur les mêmes critères.
+Espace 8 — Gestion des comptes et des paiements
+Cet espace permettra de gérer les abonnements, les factures, les achats de services, les commissions et les moyens de paiement disponibles dans chaque pays.
+Les options pourront comprendre, selon les pays et les prestataires autorisés, les cartes bancaires, les virements et les moyens de paiement locaux.
+Les fonds détenus pour le compte d'autres utilisateurs, les paiements conditionnels et les mécanismes de séquestre nécessiteront une conception juridique et opérationnelle appropriée.
+Espace 9 — Administration et gouvernance
+Les équipes habilitées disposeront d'outils permettant de gérer :
+• Les comptes et les rôles.
+• Les organisations.
+• Les annonces.
+• La taxonomie des métiers.
+• Les abonnements et les transactions.
+• Les signalements et les litiges.
+• Les contenus frauduleux.
+• Les vérifications.
+• Les autorisations et les accès.
+• Les paramètres propres à chaque pays.
+• Les statistiques et les opérations de la plateforme.
+Les actions sensibles devront être contrôlées et enregistrées.
+5. Le moteur commun : métiers, compétences et mise en relation
+Pour fonctionner à l'échelle internationale, la plateforme aura besoin d'une classification cohérente des professions.
+5.1. Une classification universelle des métiers
+Une base possible est la Classification internationale type des professions (CITP-08 ou ISCO-08) de l'Organisation internationale du Travail. Elle comporte 436 groupes de professions au niveau le plus détaillé, organisés hiérarchiquement.
+Cette classification peut servir de socle commun, complété par des spécialisations, des intitulés locaux et des compétences propres aux différents secteurs.
+La plateforme devra pouvoir comprendre que plusieurs intitulés différents correspondent parfois à une même profession.
+Elle devra également distinguer un métier, une compétence, une qualification et un service commercial : ces notions sont liées, mais elles ne sont pas interchangeables.
+5.2. Le moteur de correspondance
+Lorsqu'une entreprise recherche un candidat ou qu'un client demande une prestation, le moteur comparera notamment :
+• Les compétences requises.
+• Les réalisations disponibles.
+• L'expérience pertinente.
+• Les qualifications demandées.
+• La localisation et la mobilité.
+• La disponibilité.
+• La langue.
+• Le budget.
+• Le type de collaboration.
+Les critères de sélection seront expliqués autant que possible. Le classement ne devra pas faire passer une recommandation algorithmique pour une garantie de qualité.
+L'intelligence artificielle pourra faciliter la compréhension des demandes, la recherche et la comparaison. Elle ne remplacera pas les mécanismes de vérification, les décisions humaines nécessaires ni les obligations réglementaires.
+6. Le modèle économique global
+La plateforme aura plusieurs sources de revenus. Elles devront être adaptées à chaque profil plutôt que regroupées dans un abonnement unique.
+6.1. Entreprises
+Les offres pourront comprendre :
+• Abonnements de recrutement.
+• Achat de crédits de publication.
+• Recherche avancée de compétences.
+• Services de présélection.
+• Gestion de plusieurs recrutements.
+• Gestion des prestataires externes.
+• Fonctionnalités avancées pour les équipes.
+• Contrats institutionnels ou d'entreprise.
+6.2. Professionnels et prestataires
+Les revenus pourront provenir :
+• D'abonnements professionnels.
+• D'outils de gestion de leur activité.
+• D'options de visibilité.
+• De services avancés de portfolio.
+• De commissions sur certaines transactions.
+• De services de vérification ou d'accompagnement, lorsque leur valeur est réelle.
+Les frais devront être transparents avant l'achat ou l'engagement.
+6.3. Particuliers
+Les revenus pourront comprendre :
+• Des frais de service.
+• Des commissions sur les prestations conclues via la plateforme.
+• Des options de recherche ou de mise en relation avancées.
+• Des services de suivi ou d'assistance.
+Le montant facturé devra correspondre à une valeur identifiable pour le client.
+6.4. Étudiants et jeunes diplômés
+Les offres pourront comprendre :
+• Des abonnements étudiants.
+• Des outils premium pour le portfolio.
+• Des services d'accompagnement.
+• Des programmes d'insertion professionnelle.
+• Des services financés par les établissements ou les entreprises partenaires.
+L'accès aux opportunités et les modalités de paiement devront être conçus pour ne pas exclure inutilement les utilisateurs qui commencent leur parcours.
+6.5. Établissements et institutions
+Les offres pourront comprendre :
+• Des licences annuelles.
+• Des espaces de recrutement dédiés.
+• Des programmes de stages et d'insertion.
+• Des tableaux de bord institutionnels.
+• Des services de gestion de programmes.
+• Des contrats de partenariat.
+Principe de monétisation
+La plateforme doit pouvoir faire payer chaque catégorie d'utilisateurs pour une valeur pertinente.
+Cependant, chaque paiement doit avoir une justification claire : accès à un service, gain de temps, outil professionnel, recrutement, visibilité utile, transaction ou programme dédié.
+Les tarifs définitifs, les commissions et les abonnements seront fixés dans le modèle financier.
+7. Le parcours opérationnel commun
+Les différentes activités seront organisées autour d'une logique commune, avec des variantes selon la nature de l'interaction.
+Étape 1 — Identification du besoin
+L'entreprise, le particulier ou l'étudiant exprime ce qu'il recherche.
+Étape 2 — Qualification
+La plateforme transforme la demande en critères exploitables : métier, compétences, budget, lieu, calendrier et conditions.
+Étape 3 — Correspondance
+Le système identifie les opportunités ou les profils pertinents.
+Étape 4 — Sélection
+Les parties échangent, comparent les possibilités et choisissent la solution adaptée.
+Étape 5 — Engagement
+Les modalités sont définies : poste, stage, mission, contrat ou prestation.
+Étape 6 — Exécution
+Les parties communiquent et suivent les étapes prévues.
+Étape 7 — Résultat
+Le travail, le recrutement ou l'expérience professionnelle atteint son étape de clôture selon les règles applicables.
+Étape 8 — Évaluation et historique
+Les informations autorisées sont conservées pour améliorer le suivi et documenter la collaboration.
+Cette logique commune évitera de développer des systèmes entièrement indépendants pour chaque catégorie d'utilisateurs.
+8. Le fonctionnement international
+L'ambition mondiale impose de prévoir certaines capacités dès la conception.
+8.1. Pays et langues
+La plateforme devra gérer les langues de l'interface, les fuseaux horaires, les formats de date et d'adresse, ainsi que les particularités locales.
+8.2. Devises et paiements
+Les prix pourront être exprimés dans plusieurs devises. La conversion, la facturation et les moyens de paiement disponibles devront être définis selon les pays et les partenaires de paiement autorisés.
+8.3. Cadres réglementaires
+Les conditions d'utilisation, la protection des données, le recrutement, les stages, la fiscalité et les paiements peuvent varier d'un pays à l'autre.
+La plateforme devra donc disposer d'une configuration réglementaire par marché et d'une procédure de vérification avant de proposer un service localement.
+8.4. Vérification et sécurité
+Les niveaux de vérification pourront différencier :
+• Le compte créé.
+• L'identité vérifiée.
+• L'organisation vérifiée.
+• Les qualifications confirmées.
+• L'expérience documentée.
+• Les transactions réalisées.
+Les badges devront expliquer précisément ce qui a été contrôlé.
+8.5. Protection des utilisateurs
+La plateforme devra prévoir des mécanismes de signalement, de modération, de gestion des litiges et de lutte contre la fraude.
+Les données personnelles ne devront être accessibles qu'aux personnes autorisées, selon la finalité et les règles applicables.
+9. Modèle technique et organisation du produit
+L'ambition internationale ne signifie pas qu'il faut construire immédiatement une architecture technique complexe.
+Le produit doit être conçu avec des modules clairement séparés, mais une architecture initiale suffisamment simple pour rester maintenable.
+Les principaux modules fonctionnels seront :
+• Identité et authentification.
+• Comptes, rôles et organisations.
+• Profils et portfolios.
+• Métiers et compétences.
+• Offres et opportunités.
+• Recherche et correspondance.
+• Candidatures et propositions.
+• Messagerie.
+• Gestion des collaborations.
+• Abonnements et facturation.
+• Intégrations de paiement.
+• Réputation et vérification.
+• Modération et litiges.
+• Administration.
+• Statistiques et suivi de performance.
+• Configuration internationale.
+Chaque module devra disposer de responsabilités définies et communiquer avec les autres par des interfaces cohérentes.
+Le produit pourra commencer par une application web responsive, accessible sur ordinateur et téléphone. Des applications mobiles dédiées pourront ensuite être développées en fonction des usages.
+L'architecture devra prévoir l'évolution du volume d'utilisateurs, des transactions et des pays couverts sans imposer prématurément une infrastructure disproportionnée.
+10. Indicateurs de performance
+La plateforme ne devra pas mesurer uniquement le nombre d'inscriptions.
+Elle devra suivre la valeur réellement créée.
+DimensionIndicateurs à suivreAcquisitionNouveaux utilisateurs par catégorie et par paysActivationProfils complétés et premières actions réaliséesCorrespondanceRecherches ayant produit des résultats pertinentsRecrutementCandidatures qualifiées et recrutements finalisésPrestationsDemandes, devis, contrats et prestations terminéesExpérience étudianteStages obtenus et expériences réaliséesQualitéSatisfaction, signalements, annulations et litigesFidélisationUtilisateurs qui reviennent et utilisent de nouveau la plateformeRevenusChiffre d'affaires par catégorie et par marchéRentabilitéMarge après les coûts d'acquisition, de paiement, de support et d'exploitation 
+Les définitions et les objectifs chiffrés seront établis dans le plan de mesure. Les résultats devront pouvoir être comparés dans le temps et entre marchés.
+11. Développement par étapes
+Le modèle reste mondial. Les étapes ci-dessous organisent sa réalisation, pas la réduction de son ambition.
+Phase 1 — Socle professionnel
+Construire les identités, les profils, la classification des métiers, la recherche, les annonces, les candidatures et les espaces de gestion essentiels.
+Phase 2 — Collaborations et monétisation
+Ajouter les propositions commerciales, les accords, le suivi des collaborations, les abonnements, la facturation, les intégrations de paiement et les outils de confiance nécessaires.
+Phase 3 — Parcours étudiants et institutionnels
+Développer les stages, les premières expériences professionnelles, les portfolios étudiants, les programmes partenaires et les outils institutionnels.
+Phase 4 — Internationalisation
+Déployer les langues, les devises, les configurations réglementaires et les moyens de paiement nécessaires aux nouveaux marchés.
+Phase 5 — Écosystème étendu
+Développer progressivement les intégrations externes, les services avancés, les outils analytiques, les fonctions d'intelligence artificielle et les fonctionnalités supplémentaires validées par les usages.
+Chaque phase sera conditionnée par la qualité opérationnelle des modules précédents et par les exigences du marché concerné.
+12. Les principes qui ne devront pas changer
+Le développement du produit reposera sur les principes suivants :
+• Un compte personnel peut évoluer vers plusieurs rôles professionnels.
+• Le profil professionnel accompagne l'utilisateur dans la durée.
+• Les métiers doivent être compréhensibles au-delà des frontières.
+• Les employeurs, les professionnels, les étudiants et les particuliers bénéficient d'espaces adaptés.
+• La mise en relation doit pouvoir aboutir à des collaborations concrètes.
+• La réputation repose sur des éléments documentés et des évaluations encadrées.
+• Les paiements et les règles commerciales sont transparents.
+• Les règles locales peuvent être appliquées sans reconstruire toute la plateforme.
+• Les revenus sont liés à des services dont la valeur est identifiable.
+• Le développement technique reste modulaire et évolutif.
+Conclusion
+Le modèle global repose sur une idée centrale : connecter les compétences aux opportunités, puis accompagner les relations professionnelles jusqu'à leur résultat.
+La plateforme réunira les fonctions de profil professionnel, de recrutement, de recherche de prestataires, de gestion des collaborations, de services professionnels et d'accompagnement des parcours étudiants.
+Son ambition sera internationale, son architecture préparée pour plusieurs marchés et son modèle économique composé de plusieurs sources de revenus.
+La prochaine étape consiste à transformer ce modèle en cahier des charges fonctionnel détaillé, avec les écrans, les rôles, les permissions, les parcours utilisateurs, les règles métier, les cas particuliers et les exigences de sécurité.

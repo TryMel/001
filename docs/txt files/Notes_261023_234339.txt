@@ -1,0 +1,119 @@
+Akashav1
+1. Présentation du projet
+1.1. Vision
+Créer une plateforme numérique universelle permettant à chaque professionnel, entreprise, particulier ou organisation de trouver les compétences, les travailleurs et les opportunités dont il a besoin.
+La plateforme doit s'adresser à tous les métiers, du travailleur indépendant à l'ingénieur, de l'artisan au médecin, de l'agriculteur au consultant, du commerçant au développeur informatique.
+Elle doit permettre de trouver un emploi, de proposer une mission, de recruter un collaborateur, de vendre un service ou de trouver un professionnel compétent.
+1.2. Objectif principal
+Réduire les difficultés rencontrées lorsqu'une personne cherche du travail ou lorsqu'une organisation cherche une personne compétente pour accomplir une tâche.
+La plateforme devra réunir plusieurs activités :
+• Recrutement et recherche d'emploi.
+• Recherche de missions freelance.
+• Mise en relation entre clients et prestataires.
+• Recherche de compétences professionnelles.
+• Gestion des candidatures et des opportunités.
+• Développement de la visibilité professionnelle.
+• Communauté et partage de connaissances.
+• Outils de gestion des prestations.
+1.3. Public cible
+La plateforme vise cinq catégories principales d'utilisateurs.
+Les professionnels : salariés, demandeurs d'emploi, freelances, artisans, techniciens, consultants, entrepreneurs et autres travailleurs.
+Les entreprises : PME, grandes entreprises, startups, cabinets de recrutement, agences et organisations publiques.
+Les clients particuliers : personnes recherchant un artisan, un enseignant, un technicien, un chauffeur ou un autre prestataire.
+Les établissements de formation : écoles, centres de formation professionnelle et organismes de certification.
+Les recruteurs et intermédiaires : cabinets de recrutement, agences d'intérim et structures chargées de mettre en relation employeurs et candidats.
+2. Fonctionnement général
+La plateforme devra proposer plusieurs parcours complémentaires.
+Parcours A — Trouver un emploi
+Un professionnel crée son profil, renseigne ses compétences, consulte les offres, définit ses préférences et dépose ses candidatures.
+Il peut suivre l'évolution de ses candidatures et recevoir des propositions d'employeurs.
+Parcours B — Trouver une mission
+Un indépendant présente son expertise, ses réalisations, ses tarifs, sa disponibilité et les modalités de travail qu'il accepte.
+Il consulte les missions, répond aux demandes et négocie les conditions de collaboration.
+Parcours C — Trouver un prestataire
+Un client décrit son besoin, précise son budget, sa localisation et le délai souhaité.
+La plateforme lui propose des professionnels correspondant à ses critères. Il peut consulter leurs profils, comparer leurs prestations et les contacter.
+Parcours D — Recruter un professionnel
+Une entreprise crée son espace, publie une offre, reçoit des candidatures et recherche des profils dans l'annuaire professionnel.
+Elle peut organiser son recrutement et suivre les différentes étapes de sélection.
+Parcours E — Développer son activité
+Un professionnel indépendant ou une entreprise présente ses services, publie ses réalisations, reçoit des demandes et développe sa clientèle.
+3. Architecture fonctionnelle
+Module 1 — Comptes et identités
+Inscription, connexion, récupération de compte, gestion du profil, préférences, notifications et sécurité des sessions.
+Un même utilisateur pourra exercer plusieurs rôles, par exemple salarié et freelance, sans devoir créer plusieurs comptes.
+Module 2 — Référentiel universel des métiers
+La plateforme devra disposer d'une classification organisée des secteurs, métiers, spécialités et compétences.
+Chaque métier pourra être associé à des informations adaptées :
+• Compétences requises.
+• Certifications et qualifications éventuelles.
+• Expérience.
+• Missions possibles.
+• Types d'emploi.
+• Rémunération ou tarifs indicatifs.
+• Modalités d'exercice.
+• Localisation et zone d'intervention.
+Le système devra pouvoir évoluer sans nécessiter une nouvelle version du logiciel pour chaque nouveau métier.
+Les métiers réglementés devront disposer de règles de vérification adaptées au pays concerné.
+Module 3 — Offres et opportunités
+Publication, modification, expiration et suppression des annonces.
+Les annonces pourront correspondre à plusieurs types d'opportunités :
+• Emploi permanent.
+• Contrat à durée déterminée.
+• Stage et alternance.
+• Mission freelance.
+• Travail temporaire.
+• Prestation ponctuelle.
+• Contrat de sous-traitance.
+• Mission à distance.
+• Prestation en présentiel.
+• Travail hybride.
+Le système de publication devra adapter ses champs au type d'opportunité sélectionné.
+Module 4 — Profils professionnels
+Chaque professionnel disposera d'une page présentant notamment ses compétences, son expérience, ses qualifications, ses réalisations, ses disponibilités et ses préférences.
+Selon le métier, le profil pourra inclure un CV, un portfolio, des certifications, une licence professionnelle, des références, une zone de déplacement ou des exemples de réalisations.
+Module 5 — Recherche et mise en relation
+Moteur de recherche permettant de trouver des offres, des missions, des compétences, des candidats et des prestataires.
+Les filtres pourront porter sur le métier, les compétences, le pays, la ville, le budget, la rémunération, l'expérience, la disponibilité et les modalités de travail.
+Une recommandation automatique pourra ensuite rapprocher les besoins des clients des profils professionnels.
+Module 6 — Candidatures et recrutement
+Gestion des candidatures, présélection, entretiens, notifications, échanges entre recruteurs et candidats, historique et changement de statut.
+L'entreprise pourra consulter ses offres, ses candidatures et ses processus de recrutement depuis un tableau de bord.
+Module 7 — Missions et prestations
+Publication d'une demande, réception de propositions, négociation, devis, acceptation des conditions, suivi de la prestation et validation de sa réalisation.
+Les prestations pourront être simples ou structurées en plusieurs étapes, selon leur nature.
+Module 8 — Messagerie et notifications
+Messagerie interne, notifications concernant les candidatures et missions, alertes personnalisées et communication entre les acteurs autorisés.
+Le système devra limiter le spam et prévoir des outils de blocage et de signalement.
+Module 9 — Réputation et confiance
+Évaluations après une collaboration, avis, historique des prestations et badges de vérification.
+Les avis devront correspondre à des interactions authentiques. Les mécanismes de modération et de contestation devront prévenir les faux avis et les abus.
+Module 10 — Communauté et ressources
+Espaces de discussion, questions-réponses, publications professionnelles, partage d'expérience et ressources liées aux différents métiers.
+Les contenus pourront être organisés par secteur, spécialité et niveau d'expérience.
+Module 11 — Administration
+Gestion des utilisateurs, entreprises, offres, métiers, catégories, signalements, contenus, abonnements et statistiques.
+L'administration devra disposer de permissions distinctes et d'un historique des actions sensibles.
+4. Modèle économique initial
+La plateforme devra permettre une utilisation gratuite de base pour les professionnels, afin de favoriser la création d'une communauté active.
+Les revenus pourront provenir de plusieurs sources :
+Abonnements professionnels : fonctionnalités avancées pour les entreprises et les recruteurs.
+Publication d'annonces : offres d'emploi sponsorisées, packs d'annonces et visibilité renforcée.
+Visibilité premium : options payantes pour mettre en avant certaines offres, entreprises ou prestations.
+Commissions sur les prestations : rémunération de la plateforme lorsque les contrats et les paiements sont effectivement gérés par son intermédiaire.
+Services complémentaires : vérification professionnelle, outils de recrutement, statistiques de marché et services destinés aux entreprises.
+La pertinence de chaque revenu devra être validée auprès des utilisateurs avant son déploiement.
+5. Architecture évolutive
+La plateforme sera conçue sous forme de modules indépendants fonctionnellement, partageant un référentiel commun des utilisateurs, des métiers, des compétences et des opportunités.
+Cette approche évitera de construire un logiciel différent pour chaque secteur professionnel.
+Le système devra distinguer les règles communes à tous les métiers des règles spécifiques à certaines professions, aux différentes catégories de travail et aux législations locales.
+6. Déploiement progressif
+MVP — Première version : comptes, profils, référentiel des métiers, publication d'offres, recherche, candidatures, espace recruteur, messagerie et administration.
+V2 — Mise en relation avancée : recherche de prestataires, demandes de devis, propositions commerciales, disponibilité, évaluations et fonctionnalités de confiance.
+V3 — Transactions : contrats, paiements intégrés, commissions, gestion des étapes des prestations, facturation et traitement des litiges, selon les possibilités techniques et réglementaires.
+V4 — Développement international : langues supplémentaires, gestion des devises, localisation des règles, moyens de paiement adaptés et fonctionnalités propres aux marchés ciblés.
+V5 — Écosystème professionnel : communauté étendue, ressources de formation, certifications, outils d'analyse et recommandations personnalisées.
+7. Principe de conception
+La plateforme devra rester accessible à un utilisateur qui ne maîtrise pas les outils numériques avancés, tout en proposant des fonctionnalités suffisamment complètes pour les entreprises et les professionnels expérimentés.
+Elle devra permettre l'ajout de nouveaux métiers, catégories et pays sans imposer une refonte générale de l'architecture.
+Son développement devra rester guidé par les besoins réels des utilisateurs, la sécurité, la viabilité économique et la capacité à établir une offre de valeur supérieure aux solutions existantes.

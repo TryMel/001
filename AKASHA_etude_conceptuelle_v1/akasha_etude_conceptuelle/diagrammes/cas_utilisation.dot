@@ -1,0 +1,62 @@
+digraph UseCases {
+  graph [rankdir=LR, bgcolor="white", pad="0.28", nodesep="0.42", ranksep="0.72", splines=ortho, fontname="DejaVu Sans", fontsize=18, label="AKASHA — DIAGRAMME DES CAS D’UTILISATION", labelloc=t, labeljust=l];
+  node [fontname="DejaVu Sans", fontsize=10, color="#315B7D", fontcolor="#17324D"];
+  edge [fontname="DejaVu Sans", fontsize=8, color="#64748B", arrowsize=0.65];
+
+  visitor [shape=plaintext, label="ACTEUR\nVisiteur"];
+  member [shape=plaintext, label="ACTEUR\nUtilisateur inscrit"];
+  pro [shape=plaintext, label="ACTEUR\nProfessionnel / candidat"];
+  client [shape=plaintext, label="ACTEUR\nClient particulier"];
+  orgmember [shape=plaintext, label="ACTEUR\nMembre d’organisation\n(recruteur / RH)"];
+  admin [shape=plaintext, label="ACTEUR\nAdministrateur plateforme"];
+  moderator [shape=plaintext, label="ACTEUR\nModérateur"];
+  taxadmin [shape=plaintext, label="ACTEUR\nGestionnaire référentiel"];
+  notify [shape=box, style="rounded,filled", fillcolor="#FFF7E8", color="#B45309", label="Système externe\nE-mail / SMS"];
+
+  subgraph cluster_system {
+    label="Frontière du système : AKASHA"; style="rounded"; color="#315B7D"; penwidth=1.4; margin=18; fontname="DejaVu Sans"; fontsize=12; fontcolor="#17324D";
+    subgraph cluster_discovery { label="Découverte et identité"; style="rounded,dashed"; color="#CBD5E1";
+      browse [shape=ellipse, style=filled, fillcolor="#EFF6FF", label="Consulter les offres\net profils publics"];
+      search [shape=ellipse, style=filled, fillcolor="#EFF6FF", label="Rechercher et filtrer"];
+      register [shape=ellipse, style=filled, fillcolor="#EFF6FF", label="Créer un compte\net vérifier un contact"];
+      login [shape=ellipse, style=filled, fillcolor="#EFF6FF", label="Se connecter / récupérer\nson accès"];
+      profile [shape=ellipse, style=filled, fillcolor="#EFF6FF", label="Gérer le profil personnel"];
+      proprofile [shape=ellipse, style=filled, fillcolor="#EFF6FF", label="Gérer le profil professionnel,\nles compétences et expériences"];
+    }
+    subgraph cluster_jobs { label="Emploi et recrutement — V1"; style="rounded,dashed"; color="#CBD5E1";
+      publish [shape=ellipse, style=filled, fillcolor="#ECFDF5", label="Publier / modifier /\nclôturer une offre"];
+      apply [shape=ellipse, style=filled, fillcolor="#ECFDF5", label="Déposer et suivre\nune candidature"];
+      reviewapps [shape=ellipse, style=filled, fillcolor="#ECFDF5", label="Consulter et traiter\nles candidatures"];
+      organization [shape=ellipse, style=filled, fillcolor="#ECFDF5", label="Gérer l’espace, les membres\net leurs permissions"];
+    }
+    subgraph cluster_comms { label="Communication et confiance"; style="rounded,dashed"; color="#CBD5E1";
+      message [shape=ellipse, style=filled, fillcolor="#F5F3FF", label="Échanger par messagerie"];
+      notifications [shape=ellipse, style=filled, fillcolor="#F5F3FF", label="Recevoir les notifications"];
+      report [shape=ellipse, style=filled, fillcolor="#F5F3FF", label="Signaler un compte,\nune offre ou un message"];
+      svc [shape=ellipse, style=filled, fillcolor="#FFF7ED", label="Créer une demande et\nenvoyer une proposition — V2"];
+      review [shape=ellipse, style=filled, fillcolor="#FFF7ED", label="Valider une collaboration\net laisser un avis — V2"];
+    }
+    subgraph cluster_admin { label="Administration"; style="rounded,dashed"; color="#CBD5E1";
+      accounts [shape=ellipse, style=filled, fillcolor="#FEF2F2", label="Gérer les comptes\net organisations"];
+      moderate [shape=ellipse, style=filled, fillcolor="#FEF2F2", label="Traiter les signalements\net modérer les contenus"];
+      taxonomy [shape=ellipse, style=filled, fillcolor="#FEF2F2", label="Gérer métiers, compétences\net catégories"];
+      audit [shape=ellipse, style=filled, fillcolor="#FEF2F2", label="Consulter statistiques et\njournal des actions sensibles"];
+    }
+  }
+
+  visitor -> browse; visitor -> search; visitor -> register;
+  member -> login; member -> profile; member -> message; member -> notifications; member -> report;
+  pro -> proprofile; pro -> apply; pro -> svc; pro -> review;
+  client -> search; client -> svc; client -> review;
+  orgmember -> publish; orgmember -> reviewapps; orgmember -> organization; orgmember -> message;
+  admin -> accounts; admin -> audit; moderator -> moderate; taxadmin -> taxonomy;
+  notifications -> notify [label="envoi externe", style=dashed];
+  register -> login [style=dashed, label="compte activé"];
+
+  {rank=same; visitor; member; pro; client; orgmember;}
+  {rank=same; admin; moderator; taxadmin;}
+  {rank=same; browse; search; register; login; profile; proprofile;}
+  {rank=same; publish; apply; reviewapps; organization;}
+  {rank=same; message; notifications; report; svc; review;}
+  {rank=same; accounts; moderate; taxonomy; audit;}
+}

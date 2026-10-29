@@ -1,0 +1,262 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+hide empty methods
+skinparam linetype ortho
+
+package "Identité et accès" {
+  class Account {
+    +id: UUID
+    +status: AccountStatus
+    +createdAt: datetime
+    +lastLoginAt: datetime
+  }
+  class ContactPoint {
+    +id: UUID
+    +type: EMAIL | PHONE
+    +normalizedValue: string
+    +isVerified: bool
+    +isPrimary: bool
+  }
+  class PersonProfile {
+    +accountId: UUID
+    +displayName: string
+    +countryCode: string
+    +city: string
+    +bio: text
+    +visibility: ProfileVisibility
+  }
+  class ProfessionalProfile {
+    +id: UUID
+    +headline: string
+    +summary: text
+    +yearsExperience: int
+    +availability: AvailabilityStatus
+    +profileVisibility: ProfileVisibility
+  }
+  class Organization {
+    +id: UUID
+    +name: string
+    +type: OrganizationType
+    +countryCode: string
+    +status: OrganizationStatus
+  }
+  class OrganizationMembership {
+    +id: UUID
+    +organizationRole: OWNER | ADMIN | RECRUITER | MEMBER
+    +status: MembershipStatus
+    +joinedAt: datetime
+  }
+  class PlatformRoleAssignment {
+    +id: UUID
+    +role: PLATFORM_ADMIN | MODERATOR | TAXONOMY_MANAGER | SUPPORT
+    +grantedAt: datetime
+    +revokedAt: datetime?
+  }
+}
+
+package "Référentiel et preuves" {
+  class Profession {
+    +id: UUID
+    +parentProfessionId: UUID?
+    +code: string
+    +label: string
+    +regulated: bool
+    +status: ACTIVE | INACTIVE
+  }
+  class Skill {
+    +id: UUID
+    +code: string
+    +label: string
+    +status: ACTIVE | INACTIVE
+  }
+  class ProfessionalProfession {
+    +id: UUID
+    +isPrimary: bool
+    +yearsExperience: int
+  }
+  class ProfessionSkill {
+    +professionId: UUID
+    +skillId: UUID
+    +importance: OPTIONAL | RECOMMENDED | REQUIRED
+  }
+  class ProfessionalSkill {
+    +id: UUID
+    +level: 1..5
+    +yearsUsed: decimal?
+  }
+  class ProfessionalExperience {
+    +id: UUID
+    +employerName: string
+    +title: string
+    +startDate: date
+    +endDate: date?
+    +isCurrent: bool
+  }
+  class Credential {
+    +id: UUID
+    +title: string
+    +issuer: string
+    +issuedAt: date?
+    +expiresAt: date?
+    +verificationStatus: DECLARED | PENDING | VERIFIED | REJECTED | EXPIRED
+  }
+  class PortfolioItem {
+    +id: UUID
+    +title: string
+    +description: text
+    +url: string?
+    +visibility: ProfileVisibility
+  }
+}
+
+package "Opportunités et candidatures" {
+  abstract class Opportunity {
+    +id: UUID
+    +title: string
+    +description: text
+    +status: DRAFT | PENDING_REVIEW | PUBLISHED | PAUSED | FILLED | EXPIRED | REJECTED | ARCHIVED
+    +countryCode: string
+    +city: string?
+    +workMode: ONSITE | REMOTE | HYBRID | FLEXIBLE
+    +publishedAt: datetime?
+    +expiresAt: datetime?
+    +createdAt: datetime
+  }
+  class JobOffer {
+    +contractType: CDI | CDD | INTERNSHIP | APPRENTICESHIP | TEMPORARY | OTHER
+    +salaryMin: decimal?
+    +salaryMax: decimal?
+    +currency: string
+    +vacancyCount: int
+    +applicationDeadline: datetime?
+  }
+  class ServiceRequest {
+    +budgetMin: decimal?
+    +budgetMax: decimal?
+    +currency: string
+    +desiredDeadline: datetime?
+    +requestStatus: OPEN | IN_DISCUSSION | AWARDED | CANCELLED
+  }
+  class ServiceListing {
+    +pricingModel: FIXED | HOURLY | DAILY | QUOTE
+    +startingPrice: decimal?
+    +currency: string
+    +serviceArea: string?
+  }
+  class Application {
+    +id: UUID
+    +status: SUBMITTED | REVIEWING | SHORTLISTED | INTERVIEW | OFFERED | ACCEPTED | REJECTED | WITHDRAWN
+    +coverMessage: text?
+    +submittedAt: datetime
+    +updatedAt: datetime
+  }
+  class ServiceProposal {
+    +id: UUID
+    +amount: decimal?
+    +currency: string
+    +message: text
+    +estimatedDuration: string?
+    +status: SUBMITTED | DISCUSSION | ACCEPTED | REJECTED | WITHDRAWN | EXPIRED
+  }
+}
+
+package "Communication, sécurité et contrôle" {
+  class Conversation {
+    +id: UUID
+    +status: OPEN | MUTED | CLOSED
+    +createdAt: datetime
+  }
+  class ConversationParticipant {
+    +id: UUID
+    +joinedAt: datetime
+    +lastReadAt: datetime?
+    +mutedAt: datetime?
+  }
+  class Message {
+    +id: UUID
+    +body: text
+    +sentAt: datetime
+    +editedAt: datetime?
+    +deletedAt: datetime?
+  }
+  class Notification {
+    +id: UUID
+    +type: string
+    +payload: json
+    +createdAt: datetime
+    +readAt: datetime?
+    +deliveryStatus: PENDING | SENT | FAILED
+  }
+  class Report {
+    +id: UUID
+    +targetType: ACCOUNT | ORGANIZATION | OPPORTUNITY | MESSAGE | REVIEW
+    +targetId: UUID
+    +reasonCode: string
+    +status: OPEN | UNDER_REVIEW | ACTIONED | DISMISSED
+    +createdAt: datetime
+  }
+  class AuditLog {
+    +id: UUID
+    +action: string
+    +targetType: string
+    +targetId: UUID?
+    +occurredAt: datetime
+    +metadata: json
+  }
+}
+
+Account "1" *-- "0..*" ContactPoint
+Account "1" *-- "0..1" PersonProfile
+Account "1" *-- "0..1" ProfessionalProfile
+Account "1" -- "0..*" OrganizationMembership
+Organization "1" *-- "1..*" OrganizationMembership
+Account "1" -- "0..*" PlatformRoleAssignment
+
+ProfessionalProfile "1" *-- "0..*" ProfessionalProfession
+Profession "1" -- "0..*" ProfessionalProfession
+Profession "1" -- "0..*" Profession : parent / sous-métiers
+Profession "1" -- "0..*" ProfessionSkill
+Skill "1" -- "0..*" ProfessionSkill
+ProfessionalProfile "1" *-- "0..*" ProfessionalSkill
+Skill "1" -- "0..*" ProfessionalSkill
+ProfessionalProfile "1" *-- "0..*" ProfessionalExperience
+ProfessionalProfile "1" *-- "0..*" Credential
+ProfessionalProfile "1" *-- "0..*" PortfolioItem
+
+Account "1" <-- "0..*" Opportunity : créé par
+Account "0..1" <-- "0..*" Opportunity : publié à titre individuel
+Organization "0..1" <-- "0..*" Opportunity : publié au nom de
+Opportunity <|-- JobOffer
+Opportunity <|-- ServiceRequest
+Opportunity <|-- ServiceListing
+JobOffer "1" *-- "0..*" Application
+ProfessionalProfile "1" -- "0..*" Application : candidat
+ServiceRequest "1" *-- "0..*" ServiceProposal
+ProfessionalProfile "1" -- "0..*" ServiceProposal : prestataire
+
+Conversation "1" *-- "2..*" ConversationParticipant
+Account "1" -- "0..*" ConversationParticipant
+Conversation "1" *-- "0..*" Message
+Account "1" <-- "0..*" Message : envoyé par
+Account "1" *-- "0..*" Notification
+Account "1" <-- "0..*" Report : signalant
+Account "1" <-- "0..*" AuditLog : acteur
+
+note right of Opportunity
+  Invariant à la publication : une et une seule cible
+  de publication doit être renseignée : compte individuel
+  OU organisation. Le créateur est toujours un compte actif.
+end note
+note right of Conversation
+  En MVP, une conversation doit être liée à une candidature
+  ou à une opportunité. Les participants sont déterminés
+  par ce contexte et les permissions associées.
+end note
+note bottom of ProfessionalProfile
+  Un compte possède au plus un profil professionnel en V1,
+  mais ce profil peut couvrir plusieurs métiers et compétences.
+end note
+@enduml

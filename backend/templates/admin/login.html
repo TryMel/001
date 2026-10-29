@@ -1,0 +1,23 @@
+{% extends "unfold/layouts/unauthenticated.html" %}
+{% load i18n static unfold %}
+
+{% block extrastyle %}{{ block.super }}{{ form.media }}{% endblock %}
+{% block title %}Connexion | {{ site_title }}{% endblock %}
+{% block content %}
+<div class="akasha-login">
+    <img src="{% static 'akasha/logo-akasha.svg' %}" alt="Akasha" class="akasha-login-logo">
+    <p class="akasha-overline">CONSOLE D’ADMINISTRATION</p>
+    <h1>Accédez à votre espace de pilotage</h1>
+    <p class="akasha-login-copy">Gestion des opérations, de la qualité et de la sécurité de la plateforme.</p>
+    {% include "unfold/helpers/messages.html" %}
+    {% if form.errors or form.non_field_errors %}
+        <div class="akasha-login-error">Vos identifiants sont incorrects ou votre compte ne dispose pas des droits requis.</div>
+    {% endif %}
+    <form action="{{ app_path }}" method="post" id="login-form" class="akasha-login-form">
+        {% csrf_token %}
+        {% include "unfold/helpers/field.html" with field=form.username %}
+        {% include "unfold/helpers/field.html" with field=form.password %}
+        <button type="submit" class="akasha-login-submit">Se connecter</button>
+    </form>
+</div>
+{% endblock %}

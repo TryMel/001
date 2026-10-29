@@ -1,0 +1,320 @@
+ÉTUDE STRATÉGIQUE — PLATEFORME UNIVERSELLE DES MÉTIERS
+
+Phase 1 : cartographie concurrentielle, failles du marché et recherche d'un avantage distinctif
+Marché de lancement envisagé : Côte d'Ivoire, avec une ambition internationale.
+Date de l'analyse : 23 octobre 2026.
+
+Notre objectif n'est pas simplement de reproduire Free-Work en ajoutant des catégories de métiers. Nous devons déterminer comment construire une plateforme qui apporte davantage de valeur que les solutions existantes et qui puisse devenir économiquement viable.
+
+La première découverte est importante : des concurrents occupent déjà une partie du terrain que nous envisageons. Notre avantage devra donc provenir du problème que nous résolvons mieux, et non du nombre de fonctionnalités que nous proposons.
+
+1. Cartographie des concurrents
+
+J'ai retenu huit références : certaines sont des concurrents directs, d'autres des modèles dont nous pouvons étudier les mécanismes.
+
+A. Les plateformes internationales
+
+Plateforme	Positionnement	Forces principales	Enseignement pour notre projet
+
+Free-Work	Emploi et missions freelance dans l'informatique	Spécialisation métier, recherche de missions et d'emplois, communauté professionnelle	Étudier comment une plateforme sert efficacement une catégorie professionnelle.
+LinkedIn	Réseau professionnel et recrutement	Réseau professionnel, visibilité des profils, recherche de candidats et outils de recrutement	La mise en relation bénéficie de la qualité des profils et des relations professionnelles.
+Indeed	Recherche d'emploi et recrutement	Recherche d'offres, CV, informations sur les entreprises et outils de recrutement	Simplifier le parcours entre la recherche d'un emploi et la candidature.
+Upwork	Marché international des freelances	Profils, propositions, sélection des prestataires, collaboration et paiements	Transformer une compétence disponible en prestation commerciale.
+Malt	Freelances et gestion des talents indépendants	Recherche de talents, suivi des collaborations, devis, facturation et gestion des prestataires	Ne pas limiter le service à la mise en relation : faciliter aussi la collaboration.
+
+Sources : pages officielles des plateformes. 
+
+Ce que nous devons retenir : chaque plateforme possède une spécialisation ou une capacité qui renforce sa proposition de valeur. LinkedIn bénéficie de son réseau professionnel, Indeed se concentre sur l'emploi, Upwork organise le travail freelance et Malt facilite également sa gestion opérationnelle.
+
+Il serait donc difficile de les concurrencer en reproduisant uniquement leurs fonctionnalités.
+
+B. Les concurrents présents en Côte d'Ivoire
+
+C'est ici que l'analyse devient particulièrement intéressante.
+
+1. Jobivoire : un concurrent direct à examiner sérieusement
+
+Site : jobivoire.ci
+
+Jobivoire présente publiquement une offre associant emploi, profils professionnels, candidatures, recrutement et services freelance. La plateforme propose également un annuaire de talents et indique utiliser des outils de recrutement assistés par intelligence artificielle. Son catalogue de services couvre plusieurs domaines, notamment le numérique, la formation, le coaching et certains métiers de service. 
+
+Cela signifie que plusieurs éléments de notre idée sont déjà présents sur le marché ivoirien.
+
+Fonctionnalité envisagée	Situation concurrentielle
+
+Profil professionnel unique	Déjà proposé par Jobivoire.
+Recherche d'emploi et candidatures	Déjà présente.
+Annuaire de talents	Déjà présent.
+Présentation de services freelance	Déjà présente.
+Recrutement assisté par IA	Déjà annoncé.
+Couverture de nombreux métiers	Partiellement couverte par les catégories de services affichées ; l'étendue réelle doit encore être étudiée.
+
+Conséquence stratégique : proposer simplement un compte unique pour les candidats et les freelances, une CVthèque et une IA de recrutement ne constitue pas un avantage distinctif suffisant.
+
+Il faudra analyser plus précisément l'expérience utilisateur, la couverture réelle des métiers, la disponibilité des professionnels, les résultats obtenus par les clients et le modèle économique de cette plateforme.
+
+Nous ne disposons pas encore de données indépendantes permettant de comparer ses performances commerciales à celles de notre future plateforme.
+
+2. Brobroli : la spécialisation dans les métiers du BTP
+
+Site : brobroliart.ci
+
+Brobroli se concentre notamment sur les artisans du bâtiment et les besoins associés aux chantiers. Son offre publique présente la mise en relation entre clients et artisans, des applications destinées aux différents acteurs, des mécanismes de confiance et un écosystème comprenant également fournisseurs et transporteurs. 
+
+Son intérêt pour notre étude est évident : il ne s'agit pas seulement de publier un profil professionnel. La plateforme cherche à organiser les interactions au sein d'un secteur économique précis.
+
+Leçon : dans certains métiers, les utilisateurs ont besoin d'un processus complet, de la demande initiale à la réalisation de la prestation.
+
+Nous devrons déterminer si une approche multisectorielle peut reproduire cette qualité de service sans devenir trop complexe.
+
+3. Vooizo : les services de proximité
+
+Site : vooizo.com
+
+Vooizo se présente comme une marketplace sociale destinée aux artisans et aux professionnels de services. Son fonctionnement prévoit notamment la description du besoin, la publication d'une annonce, la réception d'offres, la négociation et l'évaluation. La plateforme présente aussi des comptes certifiés et des paiements en espèces ou par Mobile Money. 
+
+Cette approche couvre un autre besoin que celui d'un site d'emploi classique.
+
+Un client qui cherche un plombier n'a pas nécessairement besoin de consulter un CV ou de publier une offre d'emploi. Il veut résoudre un problème concret, connaître le prix, trouver une personne disponible et obtenir une prestation satisfaisante.
+
+Leçon : une plateforme universelle ne peut pas simplement utiliser le même parcours pour tous les utilisateurs. Elle doit adapter son fonctionnement au besoin réel.
+
+---
+
+2. Où se trouve réellement l'opportunité ?
+
+À ce stade, nous pouvons distinguer trois marchés qui se chevauchent, sans être identiques.
+
+Marché 1 : l'emploi
+
+L'objectif est de mettre en relation un employeur et un candidat.
+
+Exemple : une entreprise recherche un comptable pour un poste permanent.
+
+Les besoins centraux sont la publication d'offres, la recherche de candidats, l'examen des qualifications, les entretiens et la gestion des candidatures.
+
+Marché 2 : les missions professionnelles
+
+L'objectif est de trouver une personne compétente pour accomplir un travail défini, pendant une durée limitée ou selon des livrables convenus.
+
+Exemple : une PME recherche un développeur pour créer son application pendant trois mois.
+
+Les besoins comprennent la définition de la mission, le budget, les compétences, les propositions, les contrats et le suivi des livrables.
+
+Marché 3 : les prestations de proximité
+
+L'objectif est de résoudre un problème concret en faisant intervenir un professionnel.
+
+Exemple : un restaurant cherche un technicien pour réparer sa chambre froide.
+
+Les besoins concernent notamment la disponibilité, la localisation, les délais d'intervention, les devis, la qualité d'exécution et le règlement de la prestation.
+
+Notre première conclusion
+
+Ces trois marchés peuvent partager une infrastructure technique, mais leurs processus métier diffèrent.
+
+Dimension	Emploi	Mission professionnelle	Prestation de proximité
+
+Besoin initial	Recruter durablement	Obtenir un travail défini	Résoudre un problème concret
+Critère majeur	Compétences et adéquation au poste	Compétences, budget et livrables	Disponibilité, localisation et fiabilité
+Processus	Candidature et recrutement	Proposition, accord et exécution	Demande, devis et intervention
+Relation	Employeur–salarié	Client–prestataire	Client–professionnel
+Monétisation possible	Services de recrutement	Frais ou commissions sur les missions	Frais de mise en relation ou commissions
+
+Les modalités contractuelles et les règles applicables devront évidemment être adaptées à chaque pays et à chaque type de relation professionnelle.
+
+La difficulté fondamentale ne réside donc pas dans la création d'une interface contenant toutes les catégories. Elle réside dans l'organisation cohérente de ces différents processus.
+
+---
+
+3. Les failles que nous devons rechercher
+
+Une opportunité commerciale sérieuse se trouve rarement dans une fonctionnalité que les concurrents auraient simplement oublié d'ajouter.
+
+Il faut rechercher les situations dans lesquelles les utilisateurs perdent du temps, de l'argent ou des opportunités malgré l'existence de ces plateformes.
+
+Voici quatre hypothèses à vérifier sur le terrain.
+
+Hypothèse A — Les compétences réelles sont difficiles à démontrer
+
+Un CV peut indiquer qu'une personne sait réparer une installation électrique, gérer un stock ou développer un logiciel. Il ne démontre pas automatiquement sa compétence actuelle ni la qualité de ses réalisations.
+
+Pour les métiers manuels, une personne compétente peut également avoir peu de documents permettant de justifier son expérience.
+
+Problème à tester : les employeurs et les clients ont-ils du mal à distinguer les professionnels compétents de ceux dont le profil est seulement convaincant ?
+
+Une réponse positive pourrait justifier un profil enrichi par des preuves de compétence : réalisations, références vérifiées, certifications adaptées au métier et historique de prestations.
+
+Il faudra toutefois éviter de transformer les avis et les badges en garanties absolues de qualité.
+
+Hypothèse B — Une personne doit recommencer sa présentation à chaque nouvelle opportunité
+
+Un professionnel peut chercher successivement un emploi, une mission indépendante et des clients pour une prestation ponctuelle.
+
+Ces trois activités nécessitent souvent des présentations différentes de ses compétences et de son expérience.
+
+Problème à tester : serait-il utile de disposer d'un profil professionnel unique, capable de présenter différentes facettes d'une même expertise selon l'opportunité recherchée ?
+
+Notre plateforme pourrait proposer un profil central et des présentations adaptées à l'emploi, aux missions et aux prestations.
+
+Attention : ce principe de compte unique existe déjà chez certains concurrents. Il ne deviendra intéressant que s'il réduit réellement les efforts des utilisateurs et améliore leurs résultats.
+
+Hypothèse C — Trouver un professionnel ne garantit pas la réussite de la prestation
+
+Un client peut trouver un prestataire sans savoir précisément comment formaliser son besoin, comparer les devis, vérifier le travail réalisé ou traiter un désaccord.
+
+Problème à tester : les utilisateurs ont-ils besoin d'une assistance qui dépasse la simple mise en relation ?
+
+Une possibilité consiste à organiser le processus de bout en bout : demande, sélection, accord, réalisation, preuve d'exécution, règlement et évaluation.
+
+L'étendue de cette assistance devra varier selon les métiers. Une prestation informatique de trois mois ne se gère pas comme une réparation de plomberie.
+
+Hypothèse D — Les outils existants ne correspondent pas suffisamment aux pratiques locales
+
+Pour un lancement en Côte d'Ivoire, nous devrons notamment étudier l'importance de la recherche locale, de l'accès mobile, des budgets exprimés en FCFA, des moyens de paiement disponibles et des habitudes de communication.
+
+Ces éléments sont des hypothèses de conception, pas encore la preuve d'un avantage concurrentiel.
+
+Les concurrents locaux proposent déjà certaines adaptations : Vooizo présente par exemple des paiements en espèces et par Mobile Money, tandis que Jobivoire s'adresse explicitement au marché ivoirien. 
+
+Problème à tester : quelles difficultés restent insuffisamment résolues pour les utilisateurs ivoiriens malgré ces offres ?
+
+C'est cette question qui devra guider notre étude terrain.
+
+---
+
+4. Notre proposition de valeur : première formulation
+
+À partir des éléments disponibles, voici une première hypothèse de positionnement.
+
+> Une plateforme professionnelle universelle permettant à chacun de valoriser ses compétences, de trouver des opportunités et de travailler avec des clients ou des entreprises, quel que soit son métier.
+
+Cette formulation présente correctement notre ambition, mais elle reste trop générale pour constituer un véritable avantage concurrentiel.
+
+Je propose donc de la traduire en deux promesses concrètes.
+
+Pour le professionnel : disposer d'un profil réutilisable pour rechercher un emploi, obtenir des missions ou proposer ses services, avec des éléments vérifiables sur son expérience et ses compétences.
+
+Pour l'entreprise ou le client : décrire son besoin, identifier des professionnels adaptés et suivre le processus correspondant, qu'il s'agisse d'un recrutement, d'une mission ou d'une prestation.
+
+Cette approche pourrait nous distinguer si nous démontrons qu'elle réduit le temps nécessaire pour trouver le bon professionnel et augmente la probabilité d'obtenir un résultat satisfaisant.
+
+Il ne faut cependant pas considérer cette différenciation comme acquise : elle doit être confrontée aux offres existantes et aux attentes des utilisateurs.
+
+5. L'avantage concurrentiel que je chercherais à construire
+
+Je ne chercherais pas à gagner grâce à une longue liste de fonctionnalités.
+
+Je privilégierais trois actifs qui pourraient se renforcer mutuellement.
+
+Premier actif : un référentiel universel des compétences.
+
+Il doit permettre de représenter les métiers, les spécialités, les qualifications et les activités réellement exercées. Il devra tenir compte des différences de vocabulaire entre les pays et des exigences propres aux professions réglementées.
+
+Deuxième actif : des données fiables sur les réalisations professionnelles.
+
+Avec le consentement des personnes concernées, la plateforme pourrait structurer les expériences, les références, les certifications et les résultats de collaborations vérifiables.
+
+L'objectif serait d'aider les recruteurs et les clients à prendre de meilleures décisions que lorsqu'ils disposent uniquement de déclarations personnelles.
+
+Troisième actif : une concentration de l'offre et de la demande sur un marché précis.
+
+Il ne suffit pas d'avoir des milliers de profils si les utilisateurs ne trouvent personne de pertinent dans leur ville, leur métier, leur budget ou leur délai.
+
+L'enjeu initial sera donc de réunir suffisamment de professionnels actifs et de demandes réelles sur un périmètre limité. Les données issues des premières collaborations pourraient ensuite améliorer la qualité de la mise en relation.
+
+Ces trois actifs peuvent se renforcer, mais ils ne constituent pas encore un avantage exclusif. Leur valeur dépendra de la qualité des données, de l'activité réelle sur la plateforme et de la fidélisation des utilisateurs.
+
+Ce que je ne considérerais pas comme un avantage suffisant
+
+L'intelligence artificielle, à elle seule, n'est pas une stratégie concurrentielle.
+
+De même, les fonctionnalités suivantes sont faciles à reproduire isolément : création de CV, messagerie, notifications, profils premium, publications, filtres de recherche et recommandations.
+
+La difficulté sera de construire un service que les entreprises et les professionnels préfèrent parce qu'il leur permet d'obtenir des résultats fiables, rapidement et à un coût acceptable.
+
+---
+
+6. Où lancer le projet ?
+
+Mon conseil est de distinguer la portée de l'architecture et le périmètre du lancement commercial.
+
+L'architecture peut être pensée pour couvrir tous les métiers et plusieurs pays. Le premier lancement ne devrait toutefois pas essayer de servir simultanément tous les métiers, toutes les entreprises et tous les particuliers.
+
+Je retiendrais trois hypothèses de marché à comparer.
+
+Option	Marché de départ	Avantage potentiel	Risque principal
+
+A	Artisans et professionnels de proximité à Abidjan	Résoudre un besoin concret et fréquent, avec des prestations facilement identifiables	Confiance, qualité d'exécution, disponibilité et concurrence spécialisée
+B	PME qui recherchent des professionnels pour des recrutements et des missions courtes	Possibilité de développer des relations commerciales récurrentes avec des entreprises	Concurrence sur le recrutement et difficulté à attirer suffisamment de candidats adaptés
+C	Freelances de plusieurs secteurs proposant leurs compétences à distance	Possibilité d'élargir le marché au-delà d'une seule ville	Concurrence internationale et difficulté à générer suffisamment d'opportunités rémunérées
+
+Il s'agit d'hypothèses stratégiques à valider, et non de résultats statistiques.
+
+L'option A se confronte notamment aux offres de Brobroli et Vooizo. L'option B rencontre des acteurs tels que Jobivoire et LinkedIn. L'option C doit affronter des plateformes établies comme Upwork et Malt.
+
+Je ne choisirais donc pas une option uniquement parce que son marché semble grand.
+
+Nous devons déterminer où se trouvent simultanément un problème coûteux, des utilisateurs accessibles, une volonté de payer et une possibilité de fournir un meilleur service que les concurrents.
+
+---
+
+7. Comment valider l'opportunité avant de développer ?
+
+L'étape suivante doit être une étude terrain courte, centrée sur les comportements réels plutôt que sur les opinions.
+
+Je recommande de commencer par trois groupes :
+
+Des entreprises et des recruteurs qui cherchent des professionnels.
+
+Des clients qui achètent des prestations de service.
+
+Des professionnels qui recherchent un emploi, des missions ou des clients.
+
+Pour chaque groupe, nous devrons comprendre la dernière expérience réelle de recherche ou de recrutement.
+
+Les questions essentielles seront les suivantes :
+
+1. Quel besoin précis cherchiez-vous à résoudre ?
+
+2. Comment avez-vous trouvé votre solution actuelle ?
+
+3. Combien de temps et d'argent cette recherche vous a-t-elle coûté ?
+
+4. Quelles difficultés avez-vous rencontrées ?
+
+5. Quelles conséquences avez-vous subies en cas d'échec ?
+
+6. Quelle solution utilisez-vous lorsque les plateformes ne suffisent pas ?
+
+7. Avez-vous déjà payé pour accélérer ou sécuriser ce processus ?
+
+La question la plus révélatrice n'est pas : « Utiliseriez-vous notre application ? »
+
+C'est plutôt : « Racontez-moi la dernière fois où vous avez rencontré ce problème et ce que vous avez réellement fait pour le résoudre. »
+
+Nous pourrons ensuite tester une première version du service sans construire immédiatement une plateforme complète : formulaires de demande, profils simplifiés et mise en relation manuelle pour vérifier si les utilisateurs obtiennent réellement de meilleurs résultats.
+
+Les indicateurs devront porter sur des comportements mesurables : demandes effectivement satisfaites, délai de mise en relation, taux de réponse, collaborations réalisées, répétition des achats et volonté de payer.
+
+---
+
+8. Verdict stratégique provisoire
+
+Critère	Évaluation
+
+Ambition de couvrir tous les métiers	Cohérente pour une architecture à long terme
+Originalité de la simple mise en relation universelle	Faible : de nombreux éléments existent déjà
+Opportunité d'améliorer la preuve des compétences	Plausible, mais à valider
+Opportunité d'améliorer l'exécution des prestations	Plausible, avec des concurrents déjà présents
+Difficulté de réunir professionnels et clients	Élevée
+Possibilité de construire un avantage concurrentiel durable	Réelle, mais dépendante de la qualité du service et de l'activité effective
+Faisabilité d'un lancement mondial immédiat	Peu réaliste sans ressources importantes
+
+Mon verdict : idée exploitable, différenciation encore non démontrée.
+
+Le marché ne nous attend pas simplement pour réunir des offres d'emploi, des profils et des annonces de services. Nous devons identifier un problème suffisamment mal résolu pour que les professionnels et les entreprises aient une raison concrète de migrer vers notre plateforme.
+
+L'ambition universelle doit rester notre destination, pas nécessairement notre point de départ.
+
+La prochaine étape est de mener une étude comparative plus approfondie, puis une étude terrain en Côte d'Ivoire pour sélectionner un premier segment où notre plateforme pourra démontrer un avantage mesurable. C'est sur cette base que nous fixerons le positionnement définitif, le périmètre du MVP et les fonctionnalités à inscrire dans le cahier des charges.

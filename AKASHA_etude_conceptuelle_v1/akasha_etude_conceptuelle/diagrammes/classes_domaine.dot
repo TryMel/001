@@ -1,0 +1,91 @@
+digraph Classes {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.32", ranksep="0.70", splines=polyline, compound=true, fontname="DejaVu Sans", fontsize=18, label="AKASHA — DIAGRAMME CONCEPTUEL DES CLASSES MÉTIER", labelloc=t, labeljust=l];
+  node [shape=plain, fontname="DejaVu Sans", fontsize=9];
+  edge [fontname="DejaVu Sans", fontsize=8, color="#64748B", fontcolor="#334155", arrowsize=0.65];
+
+  subgraph cluster_identity {
+    label="Identité, accès et organisations"; style="rounded"; color="#93C5FD"; fontname="DejaVu Sans"; fontsize=12; fontcolor="#1D4ED8";
+    Account [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#2563EB"><TR><TD BGCOLOR="#DBEAFE"><B>Account</B></TD></TR><TR><TD ALIGN="LEFT">id: UUID<BR ALIGN="LEFT"/>status: AccountStatus<BR ALIGN="LEFT"/>createdAt: datetime</TD></TR></TABLE>>];
+    ContactPoint [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#2563EB"><TR><TD BGCOLOR="#DBEAFE"><B>ContactPoint</B></TD></TR><TR><TD ALIGN="LEFT">type: EMAIL | PHONE<BR ALIGN="LEFT"/>normalizedValue: string<BR ALIGN="LEFT"/>isVerified: bool</TD></TR></TABLE>>];
+    PersonProfile [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#2563EB"><TR><TD BGCOLOR="#DBEAFE"><B>PersonProfile</B></TD></TR><TR><TD ALIGN="LEFT">displayName: string<BR ALIGN="LEFT"/>countryCode, city<BR ALIGN="LEFT"/>visibility</TD></TR></TABLE>>];
+    ProfessionalProfile [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#2563EB"><TR><TD BGCOLOR="#DBEAFE"><B>ProfessionalProfile</B></TD></TR><TR><TD ALIGN="LEFT">headline: string<BR ALIGN="LEFT"/>yearsExperience: int<BR ALIGN="LEFT"/>availability, visibility</TD></TR></TABLE>>];
+    Organization [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#2563EB"><TR><TD BGCOLOR="#DBEAFE"><B>Organization</B></TD></TR><TR><TD ALIGN="LEFT">id: UUID<BR ALIGN="LEFT"/>name: string<BR ALIGN="LEFT"/>type, countryCode, status</TD></TR></TABLE>>];
+    Membership [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#2563EB"><TR><TD BGCOLOR="#DBEAFE"><B>OrganizationMembership</B></TD></TR><TR><TD ALIGN="LEFT">organizationRole<BR ALIGN="LEFT"/>status, joinedAt</TD></TR></TABLE>>];
+    PlatformRole [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#2563EB"><TR><TD BGCOLOR="#DBEAFE"><B>PlatformRoleAssignment</B></TD></TR><TR><TD ALIGN="LEFT">role<BR ALIGN="LEFT"/>grantedAt, revokedAt</TD></TR></TABLE>>];
+  }
+
+  subgraph cluster_taxonomy {
+    label="Référentiel et preuves professionnelles"; style="rounded"; color="#86EFAC"; fontname="DejaVu Sans"; fontsize=12; fontcolor="#166534";
+    Profession [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>Profession</B></TD></TR><TR><TD ALIGN="LEFT">code, label<BR ALIGN="LEFT"/>parentProfessionId?<BR ALIGN="LEFT"/>regulated, status</TD></TR></TABLE>>];
+    Skill [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>Skill</B></TD></TR><TR><TD ALIGN="LEFT">code: string<BR ALIGN="LEFT"/>label: string<BR ALIGN="LEFT"/>status</TD></TR></TABLE>>];
+    ProProfession [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>ProfessionalProfession</B></TD></TR><TR><TD ALIGN="LEFT">isPrimary: bool<BR ALIGN="LEFT"/>yearsExperience: int</TD></TR></TABLE>>];
+    ProSkill [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>ProfessionalSkill</B></TD></TR><TR><TD ALIGN="LEFT">level: 1..5<BR ALIGN="LEFT"/>yearsUsed: decimal?</TD></TR></TABLE>>];
+    Experience [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>ProfessionalExperience</B></TD></TR><TR><TD ALIGN="LEFT">employerName, title<BR ALIGN="LEFT"/>startDate, endDate?<BR ALIGN="LEFT"/>isCurrent</TD></TR></TABLE>>];
+    Credential [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>Credential</B></TD></TR><TR><TD ALIGN="LEFT">title, issuer<BR ALIGN="LEFT"/>issuedAt, expiresAt<BR ALIGN="LEFT"/>verificationStatus</TD></TR></TABLE>>];
+    Portfolio [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>PortfolioItem</B></TD></TR><TR><TD ALIGN="LEFT">title, description<BR ALIGN="LEFT"/>url?, visibility</TD></TR></TABLE>>];
+    ProfessionSkill [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#15803D"><TR><TD BGCOLOR="#DCFCE7"><B>ProfessionSkill</B></TD></TR><TR><TD ALIGN="LEFT">importance<BR ALIGN="LEFT"/>professionId, skillId</TD></TR></TABLE>>];
+  }
+
+  subgraph cluster_opportunities {
+    label="Opportunités, candidatures et prestations"; style="rounded"; color="#FDBA74"; fontname="DejaVu Sans"; fontsize=12; fontcolor="#9A3412";
+    Opportunity [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#C2410C"><TR><TD BGCOLOR="#FFEDD5"><B><I>Opportunity (abstraite)</I></B></TD></TR><TR><TD ALIGN="LEFT">title, description<BR ALIGN="LEFT"/>status, location, workMode<BR ALIGN="LEFT"/>publishedAt, expiresAt</TD></TR></TABLE>>];
+    JobOffer [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#C2410C"><TR><TD BGCOLOR="#FFEDD5"><B>JobOffer</B></TD></TR><TR><TD ALIGN="LEFT">contractType<BR ALIGN="LEFT"/>salaryMin, salaryMax, currency<BR ALIGN="LEFT"/>vacancyCount, deadline</TD></TR></TABLE>>];
+    ServiceRequest [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#C2410C"><TR><TD BGCOLOR="#FFEDD5"><B>ServiceRequest (V2)</B></TD></TR><TR><TD ALIGN="LEFT">budgetMin, budgetMax, currency<BR ALIGN="LEFT"/>desiredDeadline<BR ALIGN="LEFT"/>requestStatus</TD></TR></TABLE>>];
+    ServiceListing [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#C2410C"><TR><TD BGCOLOR="#FFEDD5"><B>ServiceListing (V2)</B></TD></TR><TR><TD ALIGN="LEFT">pricingModel<BR ALIGN="LEFT"/>startingPrice, currency<BR ALIGN="LEFT"/>serviceArea</TD></TR></TABLE>>];
+    Application [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#C2410C"><TR><TD BGCOLOR="#FFEDD5"><B>Application</B></TD></TR><TR><TD ALIGN="LEFT">status<BR ALIGN="LEFT"/>coverMessage, submittedAt<BR ALIGN="LEFT"/>updatedAt</TD></TR></TABLE>>];
+    Proposal [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#C2410C"><TR><TD BGCOLOR="#FFEDD5"><B>ServiceProposal (V2)</B></TD></TR><TR><TD ALIGN="LEFT">amount, currency<BR ALIGN="LEFT"/>message, estimatedDuration<BR ALIGN="LEFT"/>status</TD></TR></TABLE>>];
+  }
+
+  subgraph cluster_communication {
+    label="Communication, modération et audit"; style="rounded"; color="#C4B5FD"; fontname="DejaVu Sans"; fontsize=12; fontcolor="#5B21B6";
+    Conversation [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#7C3AED"><TR><TD BGCOLOR="#EDE9FE"><B>Conversation</B></TD></TR><TR><TD ALIGN="LEFT">status, createdAt<BR ALIGN="LEFT"/>context métier</TD></TR></TABLE>>];
+    Participant [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#7C3AED"><TR><TD BGCOLOR="#EDE9FE"><B>ConversationParticipant</B></TD></TR><TR><TD ALIGN="LEFT">joinedAt, lastReadAt<BR ALIGN="LEFT"/>mutedAt?</TD></TR></TABLE>>];
+    Message [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#7C3AED"><TR><TD BGCOLOR="#EDE9FE"><B>Message</B></TD></TR><TR><TD ALIGN="LEFT">body, sentAt<BR ALIGN="LEFT"/>editedAt?, deletedAt?</TD></TR></TABLE>>];
+    Notification [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#7C3AED"><TR><TD BGCOLOR="#EDE9FE"><B>Notification</B></TD></TR><TR><TD ALIGN="LEFT">type, payload<BR ALIGN="LEFT"/>createdAt, readAt?<BR ALIGN="LEFT"/>deliveryStatus</TD></TR></TABLE>>];
+    Report [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#7C3AED"><TR><TD BGCOLOR="#EDE9FE"><B>Report</B></TD></TR><TR><TD ALIGN="LEFT">targetType, targetId<BR ALIGN="LEFT"/>reasonCode, status<BR ALIGN="LEFT"/>createdAt</TD></TR></TABLE>>];
+    Audit [label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="5" CELLSPACING="0" COLOR="#7C3AED"><TR><TD BGCOLOR="#EDE9FE"><B>AuditLog</B></TD></TR><TR><TD ALIGN="LEFT">action, targetType, targetId<BR ALIGN="LEFT"/>occurredAt, metadata</TD></TR></TABLE>>];
+  }
+
+  // Identity relationships
+  Account -> ContactPoint [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Account -> PersonProfile [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..1"];
+  Account -> ProfessionalProfile [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..1"];
+  Account -> Membership [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Organization -> Membership [dir=both, arrowhead=none, arrowtail=none, label="1 — 1..*"];
+  Account -> PlatformRole [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+
+  // Professional taxonomy relationships
+  ProfessionalProfile -> ProProfession [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Profession -> ProProfession [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Profession -> Profession [dir=both, arrowhead=none, arrowtail=none, label="parent / enfants", color="#15803D"];
+  Profession -> ProfessionSkill [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Skill -> ProfessionSkill [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  ProfessionalProfile -> ProSkill [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Skill -> ProSkill [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  ProfessionalProfile -> Experience [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  ProfessionalProfile -> Credential [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  ProfessionalProfile -> Portfolio [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+
+  // Opportunities and responses
+  Account -> Opportunity [dir=back, arrowhead=none, arrowtail=none, label="createdBy: 1 — 0..*"];
+  Account -> Opportunity [dir=both, arrowhead=none, arrowtail=none, style=dashed, label="publieur individuel: 0..1"];
+  Organization -> Opportunity [dir=both, arrowhead=none, arrowtail=none, style=dashed, label="publieur organisation: 0..1"];
+  JobOffer -> Opportunity [dir=back, arrowhead=empty, arrowtail=none, label="hérite"];
+  ServiceRequest -> Opportunity [dir=back, arrowhead=empty, arrowtail=none, label="hérite"];
+  ServiceListing -> Opportunity [dir=back, arrowhead=empty, arrowtail=none, label="hérite"];
+  JobOffer -> Application [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  ProfessionalProfile -> Application [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  ServiceRequest -> Proposal [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  ProfessionalProfile -> Proposal [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+
+  // Communication and audit
+  Conversation -> Participant [dir=both, arrowhead=none, arrowtail=none, label="1 — 2..*"];
+  Account -> Participant [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Conversation -> Message [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Account -> Message [dir=back, arrowhead=none, arrowtail=none, label="expéditeur"];
+  Account -> Notification [dir=both, arrowhead=none, arrowtail=none, label="1 — 0..*"];
+  Account -> Report [dir=back, arrowhead=none, arrowtail=none, label="signalant"];
+  Account -> Audit [dir=back, arrowhead=none, arrowtail=none, label="acteur"];
+
+  {rank=same; Account; Profession; Opportunity; Conversation;}
+}
